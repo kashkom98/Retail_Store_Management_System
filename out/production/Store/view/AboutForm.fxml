@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="908.0" prefWidth="1226.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutFormController">
+   <Pane layoutX="-1.0" layoutY="-3.0" prefHeight="78.0" prefWidth="1226.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);">
+      <children>
+         <Label layoutX="40.0" layoutY="10.0" prefHeight="58.0" prefWidth="210.0" text="ABOUT" textFill="#faf9f9">
+            <font>
+               <Font name="System Bold" size="28.0" />
+            </font>
+         </Label>
+      </children></Pane>
+   <Label layoutX="330.0" layoutY="190.0" prefHeight="31.0" prefWidth="427.0" text="RETAIL STORE MANAGEMENT SYSTEM">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+   </Label>
+   <Label layoutX="190.0" layoutY="312.0" prefHeight="31.0" prefWidth="673.0" text="A platform for users to purchase items of their choice at a retail store">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Label>
+   <Label layoutX="113.0" layoutY="343.0" text="This platform provides a super user called admin to add customers, cashiers and suppliers.">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Label>
+   <Label layoutX="190.0" layoutY="462.0" text="These are the facilities of this software,">
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="191.0" layoutY="504.0" prefHeight="31.0" prefWidth="342.0" text="- View Daily Sales">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Label>
+   <Label layoutX="190.0" layoutY="532.0" prefHeight="31.0" prefWidth="342.0" text="- Manage Customers">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Label>
+   <Label layoutX="190.0" layoutY="560.0" prefHeight="31.0" prefWidth="342.0" text="- Manage Items">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Label>
+   <Label layoutX="190.0" layoutY="590.0" prefHeight="31.0" prefWidth="342.0" text="- Manage Cashiers">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Label>
+   <Label layoutX="191.0" layoutY="621.0" prefHeight="31.0" prefWidth="368.0" text="- View Cashiers Progress &amp; Much More.">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Label>
+</AnchorPane>

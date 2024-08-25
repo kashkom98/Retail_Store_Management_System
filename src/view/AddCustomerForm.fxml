@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.jfoenix.controls.Button?>-->
+<!--<?import com.jfoenix.controls.ComboBox?>-->
+<!--<?import com.jfoenix.controls.TextField?>-->
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="908.0" prefWidth="1226.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
+    <children>
+        <TableView fx:id="tblCustomer" layoutX="14.0" layoutY="465.0" onMouseReleased="#tblMouseClick" prefHeight="425.0" prefWidth="1201.0" stylesheets="@../css/fullpackstyling.css">
+            <columns>
+                <TableColumn fx:id="colCustID" prefWidth="85.0" text=" ID" />
+            <TableColumn fx:id="colCustTitle" prefWidth="42.999969482421875" text="Title" />
+                <TableColumn fx:id="colCustName" prefWidth="148.0" text="Customer Name" />
+                <TableColumn fx:id="colCustPhone" prefWidth="158.0" text="Phone No" />
+                <TableColumn fx:id="colCustAddress" prefWidth="177.0" text="Address" />
+            <TableColumn fx:id="colCustEmail" prefWidth="159.0" text="Email" />
+            <TableColumn fx:id="colCustCity" maxWidth="164.0" minWidth="0.0" prefWidth="134.0" text="City" />
+                <TableColumn fx:id="colCustState" maxWidth="160.0" minWidth="0.0" prefWidth="140.0" text="State" />
+            <TableColumn fx:id="colCustReg" maxWidth="156.0" minWidth="0.0" prefWidth="156.0" text="Reg" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtcustID" layoutX="29.0" layoutY="107.0" prefHeight="31.0" prefWidth="230.0" promptText="Customer ID" />
+        <TextField fx:id="txtcustAddress" layoutX="29.0" layoutY="177.0" prefHeight="31.0" prefWidth="230.0" promptText="Address " />
+        <TextField fx:id="txtcustName" layoutX="412.0" layoutY="107.0" prefHeight="31.0" prefWidth="158.0" promptText="Customer Name" />
+        <TextField fx:id="txtcity" layoutX="332.0" layoutY="245.0" prefHeight="31.0" prefWidth="230.0" promptText="City" />
+        <Button fx:id="btnSave" layoutX="351.0" layoutY="345.0" onAction="#CustomerAddOnAction" prefHeight="57.0" prefWidth="193.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="ADD" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnUpdate" layoutX="734.0" layoutY="148.0" onAction="#updateOnAction" prefHeight="57.0" prefWidth="193.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="Update" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnDelete" layoutX="734.0" layoutY="330.0" onAction="#customerDeleteOnAction" prefHeight="57.0" prefWidth="193.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="Delete" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="191.0" fitWidth="223.0" layoutX="992.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resources/customer_new.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="1.0" prefHeight="78.0" prefWidth="1226.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);">
+         <children>
+            <Label layoutX="32.0" layoutY="10.0" prefHeight="58.0" prefWidth="230.0" text="ADD CUSTOMER" textFill="#faf9f9">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+         </children></Pane>
+        <ComboBox fx:id="txtcustTital" layoutX="332.0" layoutY="107.0" promptText="Title">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Mr" />
+                    <String fx:value="Ms" />
+                    <String fx:value="Miss" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <ComboBox fx:id="txtprovince" layoutX="29.0" layoutY="381.0" prefHeight="31.0" prefWidth="230.0" promptText="State">
+           <items>
+              <FXCollections fx:factory="observableArrayList">
+                 <String fx:value="Massachusetts" />
+                 <String fx:value="Illinois" />
+                 <String fx:value="Texas" />
+                 <String fx:value="California" />
+                 <String fx:value="Arizona" />
+                 <String fx:value="New York" />
+                 <String fx:value="North Carolina" />
+                 <String fx:value="Washington" />
+                 <String fx:value="Ohio" />
+              </FXCollections>
+           </items>
+        </ComboBox>
+      <TextField fx:id="txtEmail" layoutX="29.0" layoutY="247.0" prefHeight="31.0" prefWidth="230.0" promptText="Email" />
+      <TextField fx:id="txtRegDate" layoutX="332.0" layoutY="174.0" prefHeight="31.0" prefWidth="230.0" promptText=" Register Date" />
+      <TextField fx:id="txtPhoneNo" layoutX="29.0" layoutY="314.0" prefHeight="31.0" prefWidth="230.0" promptText="Phone No" />
+    </children>
+</AnchorPane>
